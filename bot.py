@@ -35,7 +35,7 @@ async def on_message(message):
             result = driver.execute_script(scriptArray)
             solution = json.loads(result[0])
             await message.channel.send(solution['solution'])
-        elif "words" in info:
+        elif "word" in info:
             import nltk
             from nltk.corpus import words
             import re
@@ -107,7 +107,7 @@ async def on_message(message):
                 for word in main_list:
                     final += (word + "\n")
             await message.channel.send(final)
-        else:
+        elif (("help" not in info) and ("solution" not in info) and ("word" not in info)):
             await message.channel.send("Invalid hello message.")
 
 client.run(os.getenv("token_bot"))
