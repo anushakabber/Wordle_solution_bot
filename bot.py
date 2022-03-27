@@ -1,6 +1,6 @@
 import discord
 import os
-from dotenv import load_dotenv
+
 from selenium import webdriver
 import json
 
@@ -9,7 +9,7 @@ client = discord.Client()
 print("you're running the discord bot")
 
 @client.event
-load_dotenv()
+
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
 
