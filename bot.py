@@ -108,5 +108,4 @@ async def on_message(message):
                     final += (word + "\n")
             await message.channel.send(final)
 
-
 client.run(os.getenv("token_bot"))
