@@ -107,5 +107,7 @@ async def on_message(message):
                 for word in main_list:
                     final += (word + "\n")
             await message.channel.send(final)
+        else:
+            await message.channel.send("Invalid hello message.")
 
 client.run(os.getenv("token_bot"))
