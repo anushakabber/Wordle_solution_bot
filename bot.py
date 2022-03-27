@@ -4,7 +4,7 @@ import os
 from selenium import webdriver
 import json
 
-os.chmod('./chromedriver', 0755)
+os.chmod('./chromedriver', 755)
 
 client = discord.Client()
 
