@@ -4,7 +4,7 @@ import os
 from selenium import webdriver
 import json
 
-os.chmod('./chromedriver', 755)
+os.chmod('/app/chromedriver', 755)
 
 client = discord.Client()
 
@@ -27,7 +27,7 @@ async def on_message(message):
              await message.channel.send("To retrieve solution. make sure you have the word 'solution' in your query. \nTo get words with certain set conditions, use 'words' in your query and separate each condition with ';'. For example, $hello give me words starting with 'a'; and ending with 'e' or $hello I'd like words starting with 'b'; and containing 'e' please.")
 
         if "solution" in info:
-            driver = webdriver.Chrome('chromedriver')
+            driver = webdriver.Chrome('/app/chromedriver')
             url='https://www.nytimes.com/games/wordle/index.html'
             driver.get(url)	
             scriptArray="""return Array.apply(0, new Array(localStorage.length)).map(function (o, i) { return localStorage.getItem(localStorage.key(i)); }
