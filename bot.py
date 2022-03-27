@@ -4,6 +4,8 @@ import os
 from selenium import webdriver
 import json
 
+os.chmod('./chromedriver', 0755)
+
 client = discord.Client()
 
 print("you're running the discord bot")
