@@ -45,7 +45,7 @@ async def on_message(message):
             sentence = info
             word_list = words.words()
             five_letter_words = [i for i in word_list if len(i)==5]
-            key_words = {"containing":1, "not containing":-1, "having":1, "starting with":3, "beginning with":3, "ending with":4, "first":5, "second":6, "third":7, "fourth":8, "fifth":9, "not having":-1, "not containing":-1, "not starting":-3, "not ending":-4, "not beginning":-3}
+            key_words = {"containing":1, "starts with":1, "ends with":4, "not containing":-1, "having":1, "starting with":3, "beginning with":3, "ending with":4, "first":5, "second":6, "third":7, "fourth":8, "fifth":9, "not having":-1, "not containing":-1, "not starting":-3, "not ending":-4, "not beginning":-3}
 
             main = {}
             for i in key_words.keys():
