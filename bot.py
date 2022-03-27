@@ -1,4 +1,5 @@
 import discord
+import os
 from selenium import webdriver
 import json
 
@@ -104,4 +105,4 @@ async def on_message(message):
             await message.channel.send(final)
 
 
-client.run(token_bot)
+client.run(os.getenv("token_bot"))
