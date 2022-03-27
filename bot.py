@@ -102,4 +102,4 @@ async def on_message(message):
             await message.channel.send(final)
 
 
-client.run("OTU2OTk2NzYyNDk5OTQ4NjU0.Yj4WsA.bX3qs8uTnWr5lkQHL6gghQJQePw")
+client.run(token_bot)
