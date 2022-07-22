@@ -1,6 +1,6 @@
 
 
-def retrievePotentialWords(indicative_letters, key_words, five_letter_words)
+def retrievePotentialWords(indicative_letters, key_words, five_letter_words):
 
         main_list = five_letter_words.copy()
         for i in indicative_letters.keys():
