@@ -4,6 +4,7 @@ import re
 nltk.download('punkt')
 nltk.download('words')
 
+#catchKeywords is used to check if the user's prompt has "keywords" like "containing", "ends with", etc. and to store the alphabets the keywords are referring to. 
 
 def catchKeywords(info):
 
