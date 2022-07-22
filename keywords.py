@@ -5,7 +5,7 @@ nltk.download('punkt')
 nltk.download('words')
 
 
-def catchKeywords(info)
+def catchKeywords(info):
 
     sentence = info
     word_list = words.words()
