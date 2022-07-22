@@ -1,4 +1,4 @@
-
+import re
 
 def retrievePotentialWords(indicative_letters, key_words, five_letter_words):
 
