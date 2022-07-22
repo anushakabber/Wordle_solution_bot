@@ -1,5 +1,7 @@
 import re
 
+#retrieve PotentialWords uses regex and the collected alphabets to filter out potential solutions. 
+
 def retrievePotentialWords(indicative_letters, key_words, five_letter_words):
 
         main_list = five_letter_words.copy()
