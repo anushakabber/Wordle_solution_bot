@@ -6,6 +6,6 @@ def solutionInInfofunc(driver, ):
 	driver.get(url)	
 	scriptArray="""return Array.apply(0, new Array(localStorage.length)).map(function (o, i) { return localStorage.getItem(localStorage.key(i)); })""" 
 	result = driver.execute_script(scriptArray)
-	solution = json.loads(result[0])
+	solution = json.loads(result[1])
 	return solution
 
